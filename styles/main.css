@@ -1,0 +1,280 @@
+.mainContener {
+    margin-bottom: 10px;
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.mainContener .mainContener__wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mainContener__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 27px;
+    margin-bottom: 37px;
+}
+
+.mainContener__imgDimond {
+    width: 210px;
+    animation: lift-and-drop 5s ease-in-out infinite;
+}
+
+@keyframes lift-and-drop {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.mainContener__textBlock {
+    margin-top: 10px;
+}
+
+.mainContener__header {
+    font-size: 31px;
+    margin-left: 20%;
+    margin-bottom: 23px;
+}
+
+.mainContener__bonuses {
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    margin-right: 20px;
+    gap: 7px;
+}
+
+.mainContener__bonus {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.mainContener__tarifBlock {
+    width: 100%;
+}
+
+.mainContener__tarifBlockWrapper {
+    width: 387px;
+    margin: 0 auto;
+}
+
+.mainContener__tarifBlock .mainContener__tarifs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mainContener__tarifs .mainContener__tarif {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 114px;
+    height: 125px;
+    border: solid 1px silver;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.mostPopular_border {
+    display: none;
+}
+
+.mostPopular .mostPopular_border {
+    display: block;
+    position: relative;
+    width: 110px;
+    height: 125px;
+    padding: 65px 5px;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.mostPopular_border::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    padding: 5px;
+    background: linear-gradient(to bottom, #ea557d, #eb8353, #f2cc47);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.mostPopular_text {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+    height: 20px;
+    margin-top: -60px;
+    padding-top: 2px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to left, #ea557d, #ea555c, #eb8353);
+}
+
+.mostPopular_borderBottom {
+    height: 9px;
+}
+
+.mainContener__tarifHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.mainContener__tarifHeader .mainContener__numberData {
+    line-height: 0px;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: black;
+}
+
+.mostPopular .mainContener__numberData {
+    line-height: 35px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: -23px;
+    color: #d5465a;
+}
+
+.mainContener__tarifHeader .mainContener__textData {
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 0px;
+    color: black;
+}
+
+.mostPopular .mainContener__tarifHeader {
+    position: absolute;
+}
+
+.mostPopular .mainContener__tarifPrice {
+    position: absolute;
+    margin-top: 78px;
+}
+
+.mostPopular .mainContener__textData {
+    line-height: 18px;
+    font-weight: 600;
+    font-size: 23px;
+    margin-bottom: 0px;
+    color: #d5465a;
+}
+
+.mainContener__tarifPrice p {
+    font-weight: 600;
+    text-align: center;
+}
+
+.tarifPrice-14 {
+    margin-top: 14px;
+    font-size: 14px;
+}
+
+.tarifPrice-13 {
+    margin-top: 14px;
+    font-size: 13px;
+}
+
+.tarifPrice-12 {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.mostPopular .tarifPrice-12 {
+    margin-top: 14px;
+}
+
+.mainContener__btnContinue {
+    width: 92%;
+    height: 72px;
+    border-radius: 60px;
+    margin: 36px 4%;
+    margin-bottom: 22px;
+    padding: 18px;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    background-color: #2d56bf;
+    border: none;
+    cursor: pointer;
+}
+
+.mainContener__btnContinue:hover {
+    background-color: #3a6def;
+}
+
+.mainContener__politicText {
+    position: relative;
+    overflow: hidden;
+    max-height: 113px;
+    line-height: 15px;
+    letter-spacing: 0.4px;
+    text-indent: 0px;
+    word-spacing: 0em;
+    font-stretch: 100%;
+    font-size: 14px;
+    text-align: center;
+    color: silver;
+}
+
+.mainContener__limited {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    width: 100%;
+    height: 12px;
+}
+
+.mainContener__politicLinks {
+    display: flex;
+    gap: 54px;
+    width: 60%;
+    margin-top: 25px;
+    margin-left: 21%;
+}
+
+.mainContener__politicLinks a {
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: silver;
+    cursor: pointer;
+}
+
+@media screen and (max-width:387px) {
+    .mainContener__tarifBlockWrapper {
+        width: 93%;
+        margin: 0 auto;
+    }
+
+    .mainContener__tarifBlock .mainContener__tarifs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+}
